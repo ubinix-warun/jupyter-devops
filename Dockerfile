@@ -1,5 +1,6 @@
 FROM continuumio/anaconda3
 
+# install docker!
 RUN apt-get update -y
 RUN apt-get install apt-transport-https ca-certificates curl gnupg-agent software-properties-common -y
 RUN curl -fsSL https://download.docker.com/linux/debian/gpg | apt-key add -
