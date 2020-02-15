@@ -10,4 +10,4 @@ RUN apt-get update -y
 RUN apt-get install docker-ce-cli containerd.io -y
 
 # python pkg.
-RUN pip install awscli
+RUN conda install awscli
