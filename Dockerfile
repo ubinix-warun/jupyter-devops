@@ -9,5 +9,6 @@ RUN add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debia
 RUN apt-get update -y
 RUN apt-get install docker-ce-cli containerd.io -y
 
-# python pkg.
-RUN conda install awscli
+# python pkg. with conda
+RUN /opt/conda/bin/conda install jupyterlab -y
+RUN /opt/conda/bin/conda install -c conda-forge awscli -y
