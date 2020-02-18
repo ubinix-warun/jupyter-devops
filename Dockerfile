@@ -9,8 +9,9 @@ RUN add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debia
 RUN apt-get update -y
 RUN apt-get install docker-ce-cli containerd.io -y
 RUN apt-get install graphviz -y
-RUN apt-get install jq yq -y
+RUN apt-get install jq -y
 
 # python pkg. with conda
 RUN /opt/conda/bin/conda install jupyterlab -y
 RUN /opt/conda/bin/conda install -c conda-forge awscli -y
+RUN /opt/conda/bin/conda install -c conda-forge yq -y
