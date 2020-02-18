@@ -13,5 +13,5 @@ RUN apt-get install jq -y
 
 # python pkg. with conda
 RUN /opt/conda/bin/conda install jupyterlab -y
-RUN /opt/conda/bin/conda install -c conda-forge awscli -y
+RUN /opt/conda/bin/conda install -c conda-forge awscli ansible -y
 RUN /opt/conda/bin/conda install -c conda-forge yq -y
